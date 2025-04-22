@@ -1,0 +1,109 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Jaja Hub 🍤",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Sigma Script",
+   LoadingSubtitle = "by Nick Gir",
+   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Jaja Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("Main", "star")
+
+local GamesTab = Window:CreateTab("Games", "sparkles")
+
+local Button = MainTab:CreateButton({
+   Name = "Fake lag",
+   Callback = function()
+  loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FAKE-LAG-22520"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Inf yeild",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Goon",
+   Callback = function()
+  loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Telekenis",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Telekenis.lua"))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Gojo Tsb",
+   Callback = function()
+  loadstring(game:HttpGet('https://gist.githubusercontent.com/SonicexePort/c78fd2d00bed33921dc0db871c3f3c7e/raw/ed531fe7baf198c07e6c1609c0337cba56a4f566/gojo%20six%20eyes%2025ms%20edition%20v2'))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Dead rails",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/DeadRails", true))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Vexon Tsb",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub"))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Fisch",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Lt2",
+   Callback = function()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/Root2.lua'))("")
+   end,
+})
+
+local Button = GamesTab:CreateButton({
+   Name = "Mm2",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring"))()
+   end,
+})
+
