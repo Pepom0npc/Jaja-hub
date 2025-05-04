@@ -65,6 +65,20 @@ local Button = MainTab:CreateButton({
    end,
 })
 
+local Button = MainTab:CreateButton({
+    Name = "Vr (Bad executors wont work)",
+    Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty45.lua"))()
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
+    Name = "ChatBot Hub",
+    Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Guerric9018/chatbothub/main/ChatbotHub.lua"))()
+    end,
+ })
+
 local Button = GamesTab:CreateButton({
    Name = "Gojo Tsb",
    Callback = function()
@@ -78,6 +92,13 @@ local Button = GamesTab:CreateButton({
   loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/DeadRails", true))()
    end,
 })
+
+local Button = GamesTab:CreateButton({
+    Name = "Dead rails Bonds autofarm",
+    Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/m00ndiety/OP-AUTO-BONDS-V2/refs/heads/main/obf_New_auto_bonds_.lua.txt"))()
+    end,
+ })
 
 local Button = GamesTab:CreateButton({
    Name = "Vexon Tsb",
@@ -106,4 +127,3 @@ local Button = GamesTab:CreateButton({
   loadstring(game:HttpGet("https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring"))()
    end,
 })
-
