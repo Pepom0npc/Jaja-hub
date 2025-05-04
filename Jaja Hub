@@ -127,3 +127,12 @@ local Button = GamesTab:CreateButton({
   loadstring(game:HttpGet("https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring"))()
    end,
 })
+
+local Button = GamesTab:CreateButton({
+    Name = "Piano",
+    Callback = function()
+        pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/TALENTLESS", true))()
+            end)
+    end,
+ })
